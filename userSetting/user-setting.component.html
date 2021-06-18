@@ -1,0 +1,203 @@
+<div class="main">
+    <div class="side">
+        <div class="menu">
+
+        </div>
+    </div>
+    <div class="container">
+        <h2 id = "commonly">Commonly Used</h3>
+        <div *ngFor = "let usersetting of usersetting"class="detail">
+            <h4>{{usersetting.title}}</h4>
+            <p>{{usersetting.detail}}</p>
+            <p class="value">{{usersetting.value}}</p>
+        </div>
+        <h2 id = "textEditor">textEditor</h3>
+        <div *ngFor = "let textEditor of textEditor"class="detail">
+            <h4>{{textEditor.title}}</h4>
+            <p>{{textEditor.detail}}</p>
+            <p class="value">{{textEditor.value}}</p>
+        </div>
+        <h3 id = "cursor">cursor</h3>
+        <div *ngFor = "let cursor of cursor"class="detail">
+            <h4>{{cursor.title}}</h4>
+            <p>{{cursor.detail}}</p>
+            <p class="value">{{cursor.value}}</p>
+        </div>
+        <h3 id = "find">find</h3>
+        <div *ngFor = "let find of find"class="detail">
+            <h4>{{find.title}}</h4>
+            <p>{{find.detail}}</p>
+            <p class="value">{{find.value}}</p>
+        </div>
+        <h3 id = "font">font</h3>
+        <div *ngFor = "let font of font"class="detail">
+            <h4>{{font.title}}</h4>
+            <p>{{font.detail}}</p>
+            <p class="value">{{font.value}}</p>
+        </div>
+        <h3 id = "formatting">formatting</h3>
+        <div *ngFor = "let formatting of formatting"class="detail">
+            <h4>{{formatting.title}}</h4>
+            <p>{{formatting.detail}}</p>
+            <p class="value">{{formatting.value}}</p>
+        </div>
+        <h3 id = "diffeditor">diffeditor</h3>
+        <div *ngFor = "let diffeditor of diffeditor"class="detail">
+            <h4>{{diffeditor.title}}</h4>
+            <p>{{diffeditor.detail}}</p>
+            <p class="value">{{diffeditor.value}}</p>
+        </div>
+        <h3 id = "minimap">minimap</h3>
+        <div *ngFor = "let minimap of minimap"class="detail">
+            <h4>{{minimap.title}}</h4>
+            <p>{{minimap.detail}}</p>
+            <p class="value">{{minimap.value}}</p>
+        </div>
+        <h3 id = "suggest">minimapsuggest</h3>
+        <div *ngFor = "let suggest of suggest"class="detail">
+            <h4>{{suggest.title}}</h4>
+            <p>{{suggest.detail}}</p>
+            <p class="value">{{suggest.value}}</p>
+        </div>
+        <h3 id = "files">files</h3>
+        <div *ngFor = "let files of files"class="detail">
+            <h4>{{files.title}}</h4>
+            <p>{{files.detail}}</p>
+            <p class="value">{{files.value}}</p>
+        </div>
+        <h2 id = "workbench">workbench</h3>
+        <div *ngFor = "let workbench of workbench"class="detail">
+            <h4>{{workbench.title}}</h4>
+            <p>{{workbench.detail}}</p>
+            <p class="value">{{workbench.value}}</p>
+        </div>
+        <h3 id = "appearance">appearance</h3>
+        <div *ngFor = "let appearance of appearance"class="detail">
+            <h4>{{appearance.title}}</h4>
+            <p>{{appearance.detail}}</p>
+            <p class="value">{{appearance.value}}</p>
+        </div>
+        <h3 id = "beadcrumb">beadcrumb</h3>
+        <div *ngFor = "let beadcrumb of beadcrumb"class="detail">
+            <h4>{{beadcrumb.title}}</h4>
+            <p>{{beadcrumb.detail}}</p>
+            <p class="value">{{beadcrumb.value}}</p>
+        </div>
+        <h3 id = "editormanage">editormanage</h3>
+        <div *ngFor = "let editormanage of editormanage"class="detail">
+            <h4>{{editormanage.title}}</h4>
+            <p>{{editormanage.detail}}</p>
+            <p class="value">{{editormanage.value}}</p>
+        </div>
+        <h3 id = "screencast">screencast</h3>
+        <div *ngFor = "let screencast of screencast"class="detail">
+            <h4>{{screencast.title}}</h4>
+            <p>{{screencast.detail}}</p>
+            <p class="value">{{screencast.value}}</p>
+        </div>
+        <h3 id = "window">window</h3>
+        <div *ngFor = "let window of window"class="detail">
+            <h4>{{window.title}}</h4>
+            <p>{{window.detail}}</p>
+            <p class="value">{{window.value}}</p>
+        </div>
+        <h3 id = "appearance">appearance</h3>
+        <div *ngFor = "let appearance of appearance"class="detail">
+            <h4>{{appearance.title}}</h4>
+            <p>{{appearance.detail}}</p>
+            <p class="value">{{appearance.value}}</p>
+        </div>
+        <h3 id = "newwindow">newwindow</h3>
+        <div *ngFor = "let newwindow of newwindow"class="detail">
+            <h4>{{newwindow.title}}</h4>
+            <p>{{newwindow.detail}}</p>
+            <p class="value">{{newwindow.value}}</p>
+        </div>
+        <h2 id = "features">features</h3>
+        <h3 id = "explorer">explorer</h3>
+        <div *ngFor = "let explorer of explorer"class="detail">
+            <h4>{{explorer.title}}</h4>
+            <p>{{explorer.detail}}</p>
+            <p class="value">{{explorer.value}}</p>
+        </div>
+        <h3 id = "search">search</h3>
+        <div *ngFor = "let search of search"class="detail">
+            <h4>{{search.title}}</h4>
+            <p>{{search.detail}}</p>
+            <p class="value">{{search.value}}</p>
+        </div>
+        <h3 id = "debug">debug</h3>
+        <div *ngFor = "let debug of debug"class="detail">
+            <h4>{{debug.title}}</h4>
+            <p>{{debug.detail}}</p>
+            <p class="value">{{debug.value}}</p>
+        </div>
+        <h3 id = "testing">testing</h3>
+        <div *ngFor = "let testing of testing"class="detail">
+            <h4>{{testing.title}}</h4>
+            <p>{{testing.detail}}</p>
+            <p class="value">{{testing.value}}</p>
+        </div>
+        <h3 id = "scm">scm</h3>
+        <div *ngFor = "let scm of scm"class="detail">
+            <h4>{{scm.title}}</h4>
+            <p>{{scm.detail}}</p>
+            <p class="value">{{scm.value}}</p>
+        </div>
+        <h3 id = "extension">extension</h3>
+        <div *ngFor = "let extension of extension"class="detail">
+            <h4>{{extension.title}}</h4>
+            <p>{{extension.detail}}</p>
+            <p class="value">{{extension.value}}</p>
+        </div>
+        <h3 id = "terminal">terminal</h3>
+        <div *ngFor = "let terminal of terminal"class="detail">
+            <h4>{{terminal.title}}</h4>
+            <p>{{terminal.detail}}</p>
+            <p class="value">{{terminal.value}}</p>
+        </div>
+        <h3 id = "task">task</h3>
+        <div *ngFor = "let task of task"class="detail">
+            <h4>{{task.title}}</h4>
+            <p>{{task.detail}}</p>
+            <p class="value">{{task.value}}</p>
+        </div>
+        <h3 id = "comments">comments</h3>
+        <div *ngFor = "let comments of comments"class="detail">
+            <h4>{{comments.title}}</h4>
+            <p>{{comments.detail}}</p>
+            <p class="value">{{comments.value}}</p>
+        </div>
+        <h3 id = "remote">remote</h3>
+        <div *ngFor = "let remote of remote"class="detail">
+            <h4>{{remote.title}}</h4>
+            <p>{{remote.detail}}</p>
+            <p class="value">{{remote.value}}</p>
+        </div>
+        <h2 id="application">application</h3>
+        <h3 id = "proxy">proxy</h3>
+        <div *ngFor = "let proxy of proxy"class="detail">
+            <h4>{{proxy.title}}</h4>
+            <p>{{proxy.detail}}</p>
+            <p class="value">{{proxy.value}}</p>
+        </div>
+        <h3 id = "update">update</h3>
+        <div *ngFor = "let update of update"class="detail">
+            <h4>{{update.title}}</h4>
+            <p>{{update.detail}}</p>
+            <p class="value">{{update.value}}</p>
+        </div>
+        <h2 id="security">security</h3>
+        <h3 id = "workspace">workspace</h3>
+        <div *ngFor = "let workspace of workspace"class="detail">
+            <h4>{{workspace.title}}</h4>
+            <p>{{workspace.detail}}</p>
+            <p class="value">{{workspace.value}}</p>
+        </div>
+
+
+        
+        
+        
+    </div>
+</div>

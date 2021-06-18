@@ -1,0 +1,31 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer 
+  class="sidenav" fixedInViewport = "false"
+      [attr.role]="isHandset ? 'dialog' : 'navigation'"
+      [mode]="(isHandset | async)  !.matches?'over' : 'side'"
+      [opened]="!(isHandset | async)!.matches">
+    <mat-toolbar color = "primary">Setting</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="#textEditor">TextEditor</a>
+      <a mat-list-item href="#workbench">workbench</a>
+      <a mat-list-item href="#window">window</a>
+      <a mat-list-item href="#explorer">Features</a>
+      <a mat-list-item href="#proxy">Application</a>
+      <a mat-list-item href="#workspace">Security</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar >
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="(isHandset | async)!.matches">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span style="color:white">Setting</span>
+    </mat-toolbar>
+    <app-user-setting></app-user-setting>
+  </mat-sidenav-content>
+</mat-sidenav-container>
